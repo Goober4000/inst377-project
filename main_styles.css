@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+.nav_container {
+    width: 80%;
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: rgb(247, 5, 82);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    padding: 10px 0; 
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 28px;
+
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(247, 5, 82);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.devs {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.references {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.info_container {
+    width: 80%;
+    background-color: rgb(83, 82, 82);
+    color: rgb(192, 189, 163);
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+.info_container h1 {
+    text-align: center;
+    color:rgb(254, 254, 254);
+}
+
+.info_container p {
+    margin-left: 20px;
+}
