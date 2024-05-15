@@ -71,6 +71,9 @@ nav a:hover::before {
 footer {
     background-color: rgb(247, 5, 82);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .devs {
