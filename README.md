@@ -1,7 +1,8 @@
-# Top Half
+# Valorant Web Application
+## Project Description
 
-# # Valorant Web Application
-Description
+## iOS Browser Description
 
 
-# Bottom Half
+# Developer Manual
+
