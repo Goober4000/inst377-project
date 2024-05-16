@@ -9,5 +9,9 @@ This trading platform will increase player involvement by providing a dynamic wa
 
 The platform will be optimized for iOS browsers, ensuring seamless access and functionality for users on iPhones, iPads. Recognizing that many users prefer Google Crhome, iOS open accessibility recognizes this issue and offers an unique advantage of cross-compatibility in which other services do NOT promote. One of the goals to achieve is inclusivity, aiming to accommodate a broad user base and deliver a consistent, enjoyable trading expereience for all Valorant players. Focusing on this targeted browser will make our trading platform a central location for player engagement and item exchange.
 
+## Link to Developer Manual
+
+Attach link here
+
 # Developer Manual
 
