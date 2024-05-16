@@ -1,2 +1,7 @@
-# inst377-project
-Group 6 Final Project for INST 377 - Valorant Exchange
+# Top Half
+
+# # Valorant Web Application
+Description
+
+
+# Bottom Half
