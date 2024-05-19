@@ -50,7 +50,21 @@ app.post('/customer', async (req, res) => {
     }
     });
     
-
+    app.get('/postings', async (req, res) => {
+        console.log('Attempting to GET all Customers')
+        res.header('Content-type', 'application/json');
+        const { data, error } = await supabase
+            .from('posting')
+            .select();
+    
+        if (error) {
+            console.log(error)
+            res.send(error)
+        } else if (data) {
+            res.send(data)
+        }
+    }) 
+    
 app.listen(port, () => {
     console.log('APP IS ALIVEEEEEE')
 })
