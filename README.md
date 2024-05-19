@@ -20,8 +20,6 @@ Ensure to have Node.js and npm installed on your machine. Accessible at Git *(in
 
 ## Running Application on Server
 
-## Test Description
-
 ## APIs
 ### API 1
 API 1 Description
