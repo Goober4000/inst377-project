@@ -3,6 +3,8 @@
         <title>Items</title>
         <link href="main_styles.css" rel="stylesheet" type="text/css">
         <script src="main_script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -26,9 +28,15 @@
         </header>
 
         <div class="info_container">
-            <h1>Items</h1>
-            <p>Item info goes here...</p>
+            <h1>Welcome to the Items Gallery</h1>
+            <p>Here you will be able to search for any weapon skin or buddie that has ever existed in Valorant.</p>
         </div>
+
+        <h2 id="item_header">Weapon Skins</h2>
+        <div id="weapon_container"></div>
+
+        <h2 id="item_header">Buddies</h2>
+        <div id="buddie_container"></div>
 
         <footer>
             <div class="devs">
@@ -41,5 +49,111 @@
             </div>
         </footer>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            fetch('https://valorant-api.com/v1/weapons/skins')
+                .then(response => response.json())
+                .then(data => {
+                    const skins = data.data.map(skin => [skin.displayName, skin.displayIcon]);
+
+                    new gridjs.Grid({
+                        pagination: {
+                            limit: 5
+                        },
+                        search: {
+                            enabled: true
+                        },
+                        columns: [
+                            "Skin Name",
+                            {
+                                name: "Skin Image",
+                                width: "50%",
+                                formatter: (cell) => gridjs.html(`<img src="${cell}" alt="Skin Image" style="max-width: 300px; max-height: 300px;">`)
+                            }
+                        ],
+                        data: skins,
+                        style: {
+                            table: {
+                                width: '100%'
+                            },
+                            th: {
+                                border: '2px solid #ef0f52',
+                                padding: '8px',
+                                textAlign: 'left',
+                                backgroundColor: '#f4f4f4'
+                            },
+                            td: {
+                                border: '2px solid #ef0f52',
+                                padding: '20px',
+                                textAlign: 'Left',
+                                backgroundColor: '#c1c1c1'
+                            },
+                            pagination: {
+                                marginTop: '10px',
+                                textAlign: 'right'
+                            },
+                            search: {
+                                marginBottom: '10px',
+                                textAlign: 'right'
+                            }
+                        }
+                    }).render(document.getElementById("weapon_container"));
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('https://valorant-api.com/v1/buddies')
+                .then(response => response.json())
+                .then(data => {
+                    const buddies = data.data.map(buddies => [buddies.displayName, buddies.displayIcon]);
+
+                    new gridjs.Grid({
+                        pagination: {
+                            limit: 5
+                        },
+                        search: {
+                            enabled: true
+                        },
+                        columns: [
+                            "Buddie Name",
+                            {
+                                name: "Buddie Image",
+                                width: "50%",
+                                formatter: (cell) => gridjs.html(`<img src="${cell}" alt="Skin Image" style="max-width: 300px; max-height: 300px;">`)
+                            }
+                        ],
+                        data: buddies,
+                        style: {
+                            table: {
+                                width: '100%'
+                            },
+                            th: {
+                                border: '2px solid #ef0f52',
+                                padding: '8px',
+                                textAlign: 'left',
+                                backgroundColor: '#f4f4f4'
+                            },
+                            td: {
+                                border: '2px solid #ef0f52',
+                                padding: '20px',
+                                textAlign: 'Left',
+                                backgroundColor: '#c1c1c1'
+                            },
+                            pagination: {
+                                marginTop: '10px',
+                                textAlign: 'right'
+                            },
+                            search: {
+                                marginBottom: '10px',
+                                textAlign: 'right'
+                            }
+                        }
+                    }).render(document.getElementById("buddie_container"));
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+        </script>
     </body>
 </html>
