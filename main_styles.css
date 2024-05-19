@@ -72,7 +72,6 @@ footer {
     background-color: rgb(247, 5, 82);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     bottom: 0;
-    position: fixed;
     width: 100%;
 }
 
@@ -105,4 +104,22 @@ footer {
 
 .info_container p {
     margin-left: 20px;
+}
+
+#item_header {
+    color: white;
+    margin-left: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#weapon_container {
+    width: 80%;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+#buddie_container {
+    width: 80%;
+    margin-bottom: 100px;
+    margin-left: 100px;
 }
