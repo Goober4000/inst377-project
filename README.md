@@ -20,15 +20,24 @@ Application is accessible at any .html files in this Git Repository; Primarily *
 
 ## Running Application on Server
 
+## Test Description
+
+
 ## APIs
-### API 1
-API 1 Description
+### API 1 NAME
+GET - 
+POST - 
+PATCH - 
 
-### API 2
-API 2 Description
+### API 2 NAME
+GET - 
+POST - 
+PATCH - 
 
-### API 3
-API 3 Description
+### API 3 NAME
+GET - 
+POST - 
+PATCH -
 
 ## Bug Details
 The Valorant Exchange platform has a few known bugs that users should be aware of. One issues involves the weapon skins carousel, which may not load all images correctly on the main page due to a delay of fetching, however, refreashing the page resolves this. Additionally, some cosole messages intended to appear during specific actions, such as form submissions, may not show up even though the code is running correctly. These log messsages are designed to confirm actions but might not appear as expected. 
