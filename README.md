@@ -16,15 +16,24 @@ Attach link here
 # Developer Manual
 
 ## Installing Application and Dependencies
+Ensure to have Node.js and npm installed on your machine. Accessible at Git, package.json. In doing so, npm permits acces to create an express application, fetch multiple databases, develop the file itself (node.js), and a body-parser to allow json prepare data from body.
 
 ## Running Application on Server
 
 ## Test Description
 
 ## APIs
+# API 1
+API 1 Description
+
+# API 2
+API 2 Description
+
+# API 3
+API 3 Description
 
 ## Bug Details
-The Valorant Exchange platform has a few known bugs that users should be aware of. One issues involves the weapon skins carousel, which may not load all images correctly on the main page due to a delay of fetching, however, refreashing the page resolves this. There are also minor inconsistencies of performance across different platform.
+The Valorant Exchange platform has a few known bugs that users should be aware of. One issues involves the weapon skins carousel, which may not load all images correctly on the main page due to a delay of fetching, however, refreashing the page resolves this. Additionally, some cosole messages intended to appear during specific actions, such as form submissions, may not show up even though the code is running correctly. These log messsages are designed to confirm actions but might not appear as expected. 
 
 ## Future Development
 Looking ahead, we plan to improve the responsiveness of the platform by implementing prematurely accessed data in memory to reduce the load times of servers. Using some sort of algorithm such as, Gzip or Brotli, to reduce the siza of data transfered needed to operate the application. For advanced trading features, we aim to implement automated trading suggestions that provide detail trade history and analytics of trade to inform users. Addressing the known bugs and following future development, consistently producing an engaging users friendly platform will enhance the Valorant experience.
