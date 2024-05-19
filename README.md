@@ -24,6 +24,9 @@ Attach link here
 ## APIs
 
 ## Bug Details
+The Valorant Exchange platform has a few known bugs that users should be aware of. One issues involves the weapon skins carousel, which may not load all images correctly on the main page due to a delay of fetching, however, refreashing the page resolves this. There are also minor inconsistencies of performance across different platform.
 
 ## Future Development
+Looking ahead, we plan to improve the responsiveness of the platform by implementing prematurely accessed data in memory to reduce the load times of servers. Using some sort of algorithm such as, Gzip or Brotli, to reduce the siza of data transfered needed to operate the application. For advanced trading features, we aim to implement automated trading suggestions that provide detail trade history and analytics of trade to inform users. Addressing the known bugs and following future development, consistently producing an engaging users friendly platform will enhance the Valorant experience.
+
 
