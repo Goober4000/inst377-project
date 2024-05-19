@@ -21,6 +21,7 @@ Application is accessible at any .html files in this Git Repository; Primarily *
 ## Running Application on Server
 
 ## Test Description
+To effectively test the application, severeal tools and techniques were implemented to unravel pottential issues. Inspecting console logs for all JavaScript functions ensure that data is collected correctly and function are executed as expected. Utilizing the network tab in developer tools help verify that APIs are as well, implemented correctly. Additionally, functionality verify that all User Interface elements, including form submissions, button clicks, and page navigations work properly. Ultimately, performance monitoring ensures that current and additional features in the application perform gracefulling, and provides meaningful feedback if any crashes were to occur.
 
 
 ## APIs
