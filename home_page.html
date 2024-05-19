@@ -32,6 +32,9 @@
             <h1>Welcome to Valorant Exchange!</h1>
             <p>The Valorant Trading platform</p>
         </div>
+        
+
+
         <div class="carousel-container">
             <a href="item_page.html" style="display: block; color: inherit; text-decoration: none;">
                 <div id="weaponSkinsCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -45,7 +48,22 @@
                 </div>
             </a>
         </div>
-        
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>To continue, Please provide the following information</h2>
+                <form id="nameForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <button type="submit" style="margin-top: 70px;">Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="home_pageJS.js"></script>
+
         <script>
             async function fetchWeaponSkins() {
                 const response = await fetch('https://valorant-api.com/v1/weapons/skins');
@@ -57,11 +75,15 @@
                     item.innerHTML = `<img src="${skin.displayIcon}" class="d-block w-100" alt="${skin.displayName}">`;
                     container.appendChild(item);
                 });
-                }
+            }
 
-            window.onload = fetchWeaponSkins;
+            window.onload = function() {
+                fetchWeaponSkins();
+                modal.style.display = "block";  
+        }
 
         </script>
+        
         <footer>
             <div class="devs">
                 <h3>Developers</h3>

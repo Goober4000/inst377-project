@@ -87,10 +87,9 @@ footer {
 }
 
 .info_container {
-    width: 80%;
+    width: 100%;
     background-color: rgb(83, 82, 82);
     color: rgb(192, 189, 163);
-    margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px;
