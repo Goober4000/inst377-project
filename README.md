@@ -15,3 +15,15 @@ Attach link here
 
 # Developer Manual
 
+## Installing Application and Dependencies
+
+## Running Application on Server
+
+## Test Description
+
+## APIs
+
+## Bug Details
+
+## Future Development
+
