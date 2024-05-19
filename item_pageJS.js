@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     enabled: true
                 },
                 columns: [
-                    "Buddie Name",
+                    "Buddy Name",
                     {
-                        name: "Buddie Image",
+                        name: "Buddy Image",
                         width: "50%",
                         formatter: (cell) => gridjs.html(`<img src="${cell}" alt="Skin Image" style="max-width: 300px; max-height: 300px;">`)
                     }
