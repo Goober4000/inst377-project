@@ -16,7 +16,7 @@ Attach link here
 # Developer Manual
 
 ## Installing Application and Dependencies
-Ensure to have Node.js and npm installed on your machine. Accessible at Git *(inst377-project)*, package.json. In doing so, npm permits acces to create an express application, fetch multiple databases, develop the file itself (node.js), and a body-parser to allow json prepare data from body.
+Application is accessible at any .html files in this Git Repository; Primarily *home_page.html* is the starting point of the application. Ensure to have Node.js and npm installed on your machine. Accessible at Git *(inst377-project)*, package.json. In doing so, npm permits acces to create an express application, fetch multiple databases, develop the file itself *(node.js)*, and a body-parser to allow json prepare data from body.
 
 ## Running Application on Server
 
