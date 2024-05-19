@@ -23,13 +23,13 @@ Ensure to have Node.js and npm installed on your machine. Accessible at Git, pac
 ## Test Description
 
 ## APIs
-# API 1
+### API 1
 API 1 Description
 
-# API 2
+### API 2
 API 2 Description
 
-# API 3
+### API 3
 API 3 Description
 
 ## Bug Details
